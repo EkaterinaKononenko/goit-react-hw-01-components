@@ -17,7 +17,7 @@ export default function Profile({ username, tag, location, avatar, stats }) {
         </li>
         <li>
           <span className="label">Views</span>
-          <span className="quantity">{stats.view}</span>
+          <span className="quantity">{stats.views}</span>
         </li>
         <li>
           <span className="label">Likes</span>
