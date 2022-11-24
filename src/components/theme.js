@@ -6,17 +6,11 @@ export const theme = {
   },
   fonts: {
     body: 'Raleway, sans-serif',
-    heading: 'system-ui, sans-serif',
-    monospace: 'Menlo, monospace',
   },
   fontWeights: {
     body: 400,
     heading: 700,
     bold: 900,
-  },
-  lineHeights: {
-    body: 1.5,
-    heading: 1.125,
   },
 
   fontSizes: [12, 14, 16, 20, 24, 32, 48, 64],
@@ -24,7 +18,7 @@ export const theme = {
   space: [0, 2, 4, 8, 16, 32, 64, 128],
 
   borders: {
-    heading: '10px solid green',
+    heading: '5px solid green',
   },
   radii: {
     heading: '10px',
