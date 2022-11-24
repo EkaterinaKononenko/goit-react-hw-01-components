@@ -12,26 +12,26 @@ import {
 
 export default function Profile({ username, tag, location, avatar, stats }) {
   return (
-    <ProfileWrap className="profile">
-      <ProfileNameWrap className="description">
-        <ProfileImg src={avatar} alt={username} className="avatar" />
-        <ProfileText className="name">{username}</ProfileText>
-        <ProfileText className="tag">@{tag}</ProfileText>
-        <ProfileText className="location">{location}</ProfileText>
+    <ProfileWrap>
+      <ProfileNameWrap>
+        <ProfileImg src={avatar} alt={username} />
+        <ProfileText>{username}</ProfileText>
+        <ProfileText>@{tag}</ProfileText>
+        <ProfileText>{location}</ProfileText>
       </ProfileNameWrap>
 
-      <ProfileListStat className="stats">
+      <ProfileListStat>
         <ProfileItems>
-          <StatName className="label">Followers</StatName>
-          <StatQuantity className="quantity">{stats.followers}</StatQuantity>
+          <StatName>Followers</StatName>
+          <StatQuantity>{stats.followers}</StatQuantity>
         </ProfileItems>
         <ProfileItems>
-          <StatName className="label">Views</StatName>
-          <StatQuantity className="quantity">{stats.views}</StatQuantity>
+          <StatName>Views</StatName>
+          <StatQuantity>{stats.views}</StatQuantity>
         </ProfileItems>
         <ProfileItems>
-          <StatName className="label">Likes</StatName>
-          <StatQuantity className="quantity">{stats.likes}</StatQuantity>
+          <StatName>Likes</StatName>
+          <StatQuantity>{stats.likes}</StatQuantity>
         </ProfileItems>
       </ProfileListStat>
     </ProfileWrap>

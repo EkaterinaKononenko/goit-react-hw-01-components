@@ -4,7 +4,7 @@ import { FriendListStyle } from './Friends.styled';
 
 export default function FriendList({ friends }) {
   return (
-    <FriendListStyle className="friend-list">
+    <FriendListStyle>
       {friends.map(friend => (
         <FriendListItem
           avatar={friend.avatar}

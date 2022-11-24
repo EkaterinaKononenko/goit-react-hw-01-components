@@ -3,7 +3,7 @@ import { TransactionWrap } from './Transactions.styled';
 
 export default function TransactionHistory({ items }) {
   return (
-    <TransactionWrap className="transaction-history">
+    <TransactionWrap>
       <thead>
         <tr>
           <th>Type</th>

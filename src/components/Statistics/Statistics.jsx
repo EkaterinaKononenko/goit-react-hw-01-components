@@ -9,15 +9,13 @@ import {
 
 export default function Statistics({ title, stats }) {
   return (
-    <StatSection className="statistics">
-      {title && <h2 className="title">{title}</h2>}
-      <StatList className="stat-list">
+    <StatSection>
+      {title && <h2>{title}</h2>}
+      <StatList>
         {stats.map(stat => (
-          <StatItem className="item" key={stat.id}>
-            <StatLabel className="label">{stat.label}</StatLabel>
-            <StatPercents className="percentage">
-              {stat.percentage}%
-            </StatPercents>
+          <StatItem key={stat.id}>
+            <StatLabel>{stat.label}</StatLabel>
+            <StatPercents>{stat.percentage}%</StatPercents>
           </StatItem>
         ))}
       </StatList>
