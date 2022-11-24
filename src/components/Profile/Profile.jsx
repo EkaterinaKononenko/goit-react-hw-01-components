@@ -21,15 +21,15 @@ export default function Profile({ username, tag, location, avatar, stats }) {
 
       <ProfileListStat className="stats">
         <ProfileItems>
-          <StatName className="label">Followers: </StatName>
+          <StatName className="label">Followers</StatName>
           <StatQuantity className="quantity">{stats.followers}</StatQuantity>
         </ProfileItems>
         <ProfileItems>
-          <StatName className="label">Views: </StatName>
+          <StatName className="label">Views</StatName>
           <StatQuantity className="quantity">{stats.views}</StatQuantity>
         </ProfileItems>
         <ProfileItems>
-          <StatName className="label">Likes: </StatName>
+          <StatName className="label">Likes</StatName>
           <StatQuantity className="quantity">{stats.likes}</StatQuantity>
         </ProfileItems>
       </ProfileListStat>

@@ -13,26 +13,37 @@ export const ProfileNameWrap = styled.div`
 export const ProfileText = styled.p`
   text-align: center;
   justify-content: center;
-  margin: ${props => props.theme.space[3]}px;
+  font-size: ${props => props.theme.fontSizes[6]}px;
+  margin-top: ${props => props.theme.space[3]}px;
+  margin-bottom: ${props => props.theme.space[3]}px;
 `;
 
 export const ProfileListStat = styled.ul`
   text-align: center;
-  justify-content: center;
-  margin: ${props => props.theme.space[3]}px;
+  display: flex;
+  justify-content: space-around;
+  padding: ${props => props.theme.space[0]}px;
+  margin: 0;
 `;
 
 export const ProfileItems = styled.li`
   list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   font-family: ${props => props.theme.fonts.body};
+  margin-top: ${props => props.theme.space[3]}px;
+  margin-bottom: ${props => props.theme.space[3]}px;
 `;
 
 export const StatName = styled.span`
   font-family: ${props => props.theme.fonts.body};
   font-weight: ${props => props.theme.fonts.body};
   color: ${props => props.theme.colors.text};
+  font-size: ${props => props.theme.fontSizes[5]}px;
 `;
 
 export const StatQuantity = styled.span`
   color: ${props => props.theme.colors.primary};
+  font-size: ${props => props.theme.fontSizes[5]}px;
 `;
