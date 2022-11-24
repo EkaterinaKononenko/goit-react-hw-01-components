@@ -3,9 +3,6 @@ export const theme = {
     text: '#228b22',
     background: 'linear-gradient(45deg, #588bb0, #00d4b6, #fcf837)',
     primary: '#454b1b',
-    secondary: '#05a',
-    accent: '#609',
-    muted: '#f6f6f6',
   },
   fonts: {
     body: 'Raleway, sans-serif',
@@ -31,5 +28,8 @@ export const theme = {
   },
   radii: {
     heading: '10px',
+  },
+  shadows: {
+    boxShadow: '4px 4px 33px 15px rgba(69, 75, 27, 0.8)',
   },
 };

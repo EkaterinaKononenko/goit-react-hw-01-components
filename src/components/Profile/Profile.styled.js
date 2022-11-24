@@ -3,7 +3,8 @@ import styled from 'styled-components';
 export const ProfileWrap = styled.div`
   border: ${props => props.theme.borders.heading};
   border-radius: ${props => props.theme.radii.heading};
-  width: 500px;
+  box-shadow: ${props => props.theme.shadows.boxShadow};
+  width: 600px;
 `;
 
 export const ProfileNameWrap = styled.div`
@@ -38,7 +39,7 @@ export const ProfileItems = styled.li`
 
 export const StatName = styled.span`
   font-family: ${props => props.theme.fonts.body};
-  font-weight: ${props => props.theme.fonts.body};
+  font-weight: ${props => props.theme.fontWeights.body};
   color: ${props => props.theme.colors.text};
   font-size: ${props => props.theme.fontSizes[5]}px;
 `;
