@@ -10,4 +10,8 @@ export const TransactionWrap = styled.table`
   font-weight: ${props => props.theme.fontWeights.body};
   color: ${props => props.theme.colors.primary};
   font-size: ${props => props.theme.fontSizes[5]}px;
+
+  & tr:nth-child(2n) {
+    background-color: ${props => props.theme.colors.text};
+  }
 `;
