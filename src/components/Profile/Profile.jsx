@@ -1,30 +1,39 @@
 import PropTypes from 'prop-types';
+import {
+  ProfileWrap,
+  ProfileNameWrap,
+  ProfileText,
+  ProfileListStat,
+  ProfileItems,
+  StatName,
+  StatQuantity,
+} from './Profile.styled';
 
 export default function Profile({ username, tag, location, avatar, stats }) {
   return (
-    <div className="profile">
-      <div className="description">
+    <ProfileWrap className="profile">
+      <ProfileNameWrap className="description">
         <img src={avatar} alt={username} className="avatar" />
-        <p className="name">{username}</p>
-        <p className="tag">@{tag}</p>
-        <p className="location">{location}</p>
-      </div>
+        <ProfileText className="name">{username}</ProfileText>
+        <ProfileText className="tag">@{tag}</ProfileText>
+        <ProfileText className="location">{location}</ProfileText>
+      </ProfileNameWrap>
 
-      <ul className="stats">
-        <li>
-          <span className="label">Followers</span>
-          <span className="quantity">{stats.followers}</span>
-        </li>
-        <li>
-          <span className="label">Views</span>
-          <span className="quantity">{stats.views}</span>
-        </li>
-        <li>
-          <span className="label">Likes</span>
-          <span className="quantity">{stats.likes}</span>
-        </li>
-      </ul>
-    </div>
+      <ProfileListStat className="stats">
+        <ProfileItems>
+          <StatName className="label">Followers: </StatName>
+          <StatQuantity className="quantity">{stats.followers}</StatQuantity>
+        </ProfileItems>
+        <ProfileItems>
+          <StatName className="label">Views: </StatName>
+          <StatQuantity className="quantity">{stats.views}</StatQuantity>
+        </ProfileItems>
+        <ProfileItems>
+          <StatName className="label">Likes: </StatName>
+          <StatQuantity className="quantity">{stats.likes}</StatQuantity>
+        </ProfileItems>
+      </ProfileListStat>
+    </ProfileWrap>
   );
 }
 

@@ -6,19 +6,11 @@ import data from '../data/data.json';
 import friends from '../data/friends.json';
 import FriendList from './Friends/FriendList';
 import transactions from '../data/transactions.json';
+import { Container } from './App.styled';
 
 export default function App() {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101',
-      }}
-    >
+    <Container>
       <Profile
         username={user.username}
         tag={user.tag}
@@ -29,6 +21,6 @@ export default function App() {
       <Statistics title={'Upload stats'} stats={data} />
       <FriendList friends={friends} />
       <TransactionHistory items={transactions} />
-    </div>
+    </Container>
   );
 }
