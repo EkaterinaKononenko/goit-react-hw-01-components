@@ -7,13 +7,14 @@ import {
   ProfileItems,
   StatName,
   StatQuantity,
+  ProfileImg,
 } from './Profile.styled';
 
 export default function Profile({ username, tag, location, avatar, stats }) {
   return (
     <ProfileWrap className="profile">
       <ProfileNameWrap className="description">
-        <img src={avatar} alt={username} className="avatar" />
+        <ProfileImg src={avatar} alt={username} className="avatar" />
         <ProfileText className="name">{username}</ProfileText>
         <ProfileText className="tag">@{tag}</ProfileText>
         <ProfileText className="location">{location}</ProfileText>

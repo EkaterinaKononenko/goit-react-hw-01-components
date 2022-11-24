@@ -11,6 +11,13 @@ export const ProfileNameWrap = styled.div`
   font-weight: ${props => props.theme.fonts.bold};
 `;
 
+export const ProfileImg = styled.img`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+`;
+
 export const ProfileText = styled.p`
   text-align: center;
   justify-content: center;
